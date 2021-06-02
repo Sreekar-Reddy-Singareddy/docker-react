@@ -1,0 +1,9 @@
+from node:alpine
+
+workdir /usr/apps/frontend
+copy ./package.json ./
+run npm install
+
+workdir /usr/apps/frontend
+copy . .
+cmd ["npm", "run", "start"]
