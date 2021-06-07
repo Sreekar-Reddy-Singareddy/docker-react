@@ -7,3 +7,5 @@ before_install:
 
 script:
   - docker run -e CI=true DEV_IMAGE npm run test
+
+  
